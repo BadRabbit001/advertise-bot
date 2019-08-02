@@ -155,6 +155,24 @@ async def on_message(message):
                 
     if message.content.startswith('can you'):
         await message.author.send("DM to BlackRabbit")
+                        
+    if message.content.startswith('!'):
+        await message.author.send("DM to BlackRabbit")
+                        
+    if message.content.startswith('a'):
+        await message.author.send("DM to BlackRabbit")
+                        
+    if message.content.startswith('please'):
+        await message.author.send("DM to BlackRabbit")
+                       
+    if message.content.startswith('DM'):
+        await message.author.send("DM to BlackRabbit")
+                        
+    if message.content.startswith('are'):
+        await message.author.send("DM to BlackRabbit")
+                        
+    if message.content.startswith('u'):
+        await message.author.send("DM to BlackRabbit")
         
         
     if message.content.startswith('!purge'):
