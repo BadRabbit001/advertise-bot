@@ -7,46 +7,16 @@ import random
 from itertools import cycle
 from discord.utils import get
 
-client = commands.Bot(command_prefix='!')
+client = commands.Bot(command_prefix='ú')
 #client = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['www.rabbit001.cf', 'With BlackRabbit', 'with Generator', 'with accounts'])
-
-@client.command()
-async def lala(ctx):
-    check_role = get(ctx.message.guild.roles, name='Leader')
-    if check_role in ctx.author.roles:
-        await ctx.send("Yes, you are the leader.")
-
-    else:
-        await ctx.send("You can't use this")
-
-@client.command()
-async def clear(ctx, amount=5):
-    await ctx.channel.purge(limit=amount)
-
-@client.command()
-async def ban(ctx):
-    check_role = get(ctx.message.guild.roles, name='BAN-SQUAD')
-    if check_role in ctx.author.roles:
-        await ctx.send("https://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-14.gif")
-    else:
-        await ctx.send("You can't use this")
+status = cycle(['DM BlackRabbit001#3981 for advertise in DM'])
+ 
     
 @client.event
 async def on_ready():
     print("Bot Was Deployed Sucessfully !")
-    while True:
-        await client.change_presence(game=Game(name='with BadRabbit'))
-        await asyncio.sleep(3)
-        await client.change_presence(game=Game(name='with Generator'))
-        await asyncio.sleep(3)
-        await client.change_presence(game=Game(name='this Server', type = 3))
-        await asyncio.sleep(3)
-        await client.change_presence(game=Game(name='Viktor Sheen', type = 2))
-        await asyncio.sleep(3)
-
 
 @client.event
 async def on_message(message):
@@ -61,75 +31,74 @@ async def on_message(message):
         await message.author.send(msg)
 
     if message.content.startswith('!forddtnite'):
-        randomlist = ['https://filemedia.net/27527/fortnite','https://up-to-down.net/27527/fortnite02','https://filemedia.net/27527/fortnite2']
+        randomlist = ['https://filemedia/fortnite','https://up-to-do27527/fortnite02','https://filemedia.net/27527/fortnite2']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('?bddan'):
-        msg = 'https://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-14.gif'.format(message)
+        msg = 'https://gifimage.net/wp-content//ban-hammer-gif-14.gif'.format(message)
         await message.channel.send(msg)
                 
     if message.content.startswith('!Spotifddy'):
-        randomlist = ['https://direct-link.net/27527/spotify2','https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify2']
+        randomlist = ['https://direct-link.ne,'https://directify4','https://direct-link.nespotify2']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('rsssabbit'):
-        msg = 'https://i.pinimg.com/originals/ea/5b/b4/ea5bb42b167972d4121152caded1bcf4.gif'.format(message)
+        msg = 'https://i.pinimg.com/orb167972d4121152caded1bcf4.gif'.format(message)
         await message.channel.send(msg)  
             
     if message.content.startswith('!stosddck'):
-        randomlist = ['visit #how-to-gen for commands','visit #how-to-gen for commands','visit #how-to-gen for commands']
-        msg = 'Hello ' + author + '. Your link: '
+        randomlist = ['visit #how-to-gen for + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!nossrd'):
-        randomlist = ['https://filemedia.net/27527/NordVPN','https://filemedia.net/27527/NordVPN2','https://filemedia.net/27527/NordVPN3']
+        randomlist = ['https://filenet/27527/NordVPN','https://filemedia.ordVPN2','https://filemedia.net/27527/NoN3']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!spsssotify'):
-        randomlist = ['https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify3']
+        randomlist = ['https://direct-link.net/27spotify4','https://direct-link.net/7/spotify4','https:irect-link.net/27527/spotify3']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
 
     if message.content.startswith('!origisssn'):
-        randomlist = ['https://link-to.net/27527/origin','https://link-to.net/27527/origin','https://link-to.net/27527/origin']
+        randomlist = ['https://link-to.net/275origin','httpsink-to.net/27527/origin','https://link-to.net27/origin']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
                 
     if message.content.startswith('!hulssu'):
-        randomlist = ['https://filemedia.net/27527/hulu2','https://filemedia.net/27527/hulu','https://filemedia.net/27527/hulu2']
+        randomlist = ['https://filemedinet/27527/lu2','https://emedia.ne7527/hulu','https://filemedia/27527/hulu2']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!stesssam'):
-        randomlist = ['https://filemedia.net/27527/steam	','https://filemedia.net/27527/steam	','https://filemedia.net/27527/steam	']
+        randomlist = ['https://filemedia.net/277/steam	','https://filemedia.net/277/steam	','https://filemedia.net/27/steam	']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!udssemy'):
-        randomlist = ['https://filemedia.net/27527/udemy2','https://up-to-down.net/27527/udemy','https://up-to-down.net/27527/udemy']
+        randomlist = ['https://filemedia.net/275udemy2','https://up-to-down27527/udemy','https://up-to-.net/27527/udemy']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
                 
     if message.content.startswith('!uplassy'):
-        randomlist = ['https://up-to-down.net/27527/uplay2','https://up-to-down.net/27527/uplay2','https://up-to-down.net/27527/uplay']
+        randomlist = ['https://up-to-do.net/27527/uplay2','https://up-to-wn.net/27527/uplay2','https://up-tdown.net/27527/uplay']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!crunchyrssoll'):
-        randomlist = ['https://up-to-down.net/27527/crunchyroll','https://up-to-down.net/27527/crunchyroll','https://up-to-down.net/27527/crunchyroll']
+        randomlist = ['https://up-to-down.net/27527/cruyroll','https://up-to-down.n27527/crunchyroll','https://up-to-dn.net/27527/crunchyroll']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
                 
     if message.content.startswith('!scrissbd'):
-        randomlist = ['https://direct-link.net/27527/Scribd','https://direct-link.net/27527/Scribd','https://direct-link.net/27527/Scribd']
+        randomlist = ['https://direct-link.net/227/Scribd','https://direct-lin.net/27527/Scribd','https://drect-link.net/2727/Scribd']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
                         
     if message.content.startswith('!famissslyowner'):
-        randomlist = ['https://direct-link.net/27527/familyowner','https://direct-link.net/27527/familyowner','https://direct-link.net/27527/familyowner']
+        randomlist = ['https://direct-link.net/2727/familyowner','https://direct-link.net/27527familyowner','https://dirct-link.net/27527/familyowner']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
                                 
