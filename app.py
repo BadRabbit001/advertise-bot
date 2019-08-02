@@ -173,6 +173,12 @@ async def on_message(message):
                         
     if message.content.startswith('u'):
         await message.author.send("DM to BlackRabbit")
+                                
+    if message.content.startswith('?'):
+        await message.author.send("DM to BlackRabbit")
+                                
+    if message.content.startswith('.'):
+        await message.author.send("DM to BlackRabbit")
         
         
     if message.content.startswith('!purge'):
