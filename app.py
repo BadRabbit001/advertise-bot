@@ -55,43 +55,113 @@ async def on_message(message):
     # we do not want the bot to reply to itself
     if message.author == client.user:
         return
-async def on_message(message):
-    message.content = message.content.lower()
-    author = '{0.author.mention}'.format(message)
-    # we do not want the bot to reply to itself
-    if message.author == client.user:
-        return
-                
-    if message.content.startswith('!uplassy'):
-        randomlist = ['https://up-to-do.net/27527/uplay2','https://up-to-wn.net/27527/uplay2','https://up-tdown.net/27527/uplay']
+
+    if message.content.startswith('!hello'):
+        msg = 'Hello python {0.author.mention}'.format(message)
+        await message.author.send(msg)
+
+    if message.content.startswith('!fortnite'):
+        randomlist = ['https://filemedia.net/27527/fortnite','https://up-to-down.net/27527/fortnite02','https://filemedia.net/27527/fortnite2']
         msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
-
-                                
-    if message.content.startswith('hello'):
-        randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + '   '
-        await message.author.send(msg + (random.choice(randomlist)))
-                                
-    if message.content.startswith('yo'):
-        randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + '   '
-        await message.author.send(msg + (random.choice(randomlist)))
-                                
-    if message.content.startswith('hi'):
-        randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + '   '
-        await message.author.send(msg + (random.choice(randomlist)))
-                                 
-    if message.content.startswith('ye'):
-        randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + '   '
+        
+    if message.content.startswith('?ban'):
+        msg = 'https://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-14.gif'.format(message)
+        await message.channel.send(msg)
+                
+    if message.content.startswith('!Spotify'):
+        randomlist = ['https://direct-link.net/27527/spotify2','https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify2']
+        msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('rabbit'):
-        randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + '   '
+        msg = 'https://i.pinimg.com/originals/ea/5b/b4/ea5bb42b167972d4121152caded1bcf4.gif'.format(message)
+        await message.channel.send(msg)  
+            
+    if message.content.startswith('!stock'):
+        randomlist = ['visit #how-to-gen for commands','visit #how-to-gen for commands','visit #how-to-gen for commands']
+        msg = 'Hello ' + author + '. Your link: '
         await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('!nord'):
+        randomlist = ['https://filemedia.net/27527/NordVPN','https://filemedia.net/27527/NordVPN2','https://filemedia.net/27527/NordVPN3']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('!spotify'):
+        randomlist = ['https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify4','https://direct-link.net/27527/spotify3']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+
+    if message.content.startswith('!origin'):
+        randomlist = ['https://link-to.net/27527/origin','https://link-to.net/27527/origin','https://link-to.net/27527/origin']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+                
+    if message.content.startswith('!hulu'):
+        randomlist = ['https://filemedia.net/27527/hulu2','https://filemedia.net/27527/hulu','https://filemedia.net/27527/hulu2']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('!steam'):
+        randomlist = ['https://filemedia.net/27527/steam	','https://filemedia.net/27527/steam	','https://filemedia.net/27527/steam	']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('!udemy'):
+        randomlist = ['https://filemedia.net/27527/udemy2','https://up-to-down.net/27527/udemy','https://up-to-down.net/27527/udemy']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+                
+    if message.content.startswith('!uplay'):
+        randomlist = ['https://up-to-down.net/27527/uplay2','https://up-to-down.net/27527/uplay2','https://up-to-down.net/27527/uplay']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('!crunchyroll'):
+        randomlist = ['https://up-to-down.net/27527/crunchyroll','https://up-to-down.net/27527/crunchyroll','https://up-to-down.net/27527/crunchyroll']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+                
+    if message.content.startswith('!scribd'):
+        randomlist = ['https://direct-link.net/27527/Scribd','https://direct-link.net/27527/Scribd','https://direct-link.net/27527/Scribd']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+                        
+    if message.content.startswith('!familyowner'):
+        randomlist = ['https://direct-link.net/27527/familyowner','https://direct-link.net/27527/familyowner','https://direct-link.net/27527/familyowner']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+                                
+    if message.content.startswith('!minecraft'):
+        randomlist = ['https://link-to.net/27527/Minecraft001','https://up-to-down.net/27527/minecrafts','https://filemedia.net/27527/Minecraft']
+        msg = 'Hello ' + author + '. Your link: '
+        await message.author.send(msg + (random.choice(randomlist)))
+        
+    if message.content.startswith('hello'):
+        await message.author.send("DM to BlackRabbit")
+                
+    if message.content.startswith('hi'):
+        await message.author.send("DM to BlackRabbit")
+                
+    if message.content.startswith('ye'):
+        await message.author.send("DM to BlackRabbit")
+                
+    if message.content.startswith('yo'):
+        await message.author.send("DM to BlackRabbit")
+                     
+    if message.content.startswith('can'):
+        await message.author.send("DM to BlackRabbit")
+                
+    if message.content.startswith('can you'):
+        await message.author.send("DM to BlackRabbit")
+        
+        
+    if message.content.startswith('!purge'):
+        args = message.content.split(" ")
+        a = int(args[1])
+        await message.channel.purge(limit=a)
+    await client.process_commands(message)
     
 @client.event
 async def on_ready():
