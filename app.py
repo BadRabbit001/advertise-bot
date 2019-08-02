@@ -135,7 +135,7 @@ async def on_message(message):
                                 
     if message.content.startswith('hello'):
         randomlist = ['**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**','**DM TO BlackRabbit001#3981**']
-        msg = 'Hello ' + author + ''
+        msg = 'Hello ' + author + '   '
         await message.author.send(msg + (random.choice(randomlist)))
         
     if message.content.startswith('!help'):
