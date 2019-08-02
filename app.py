@@ -7,18 +7,54 @@ import random
 from itertools import cycle
 from discord.utils import get
 
-client = commands.Bot(command_prefix='ú')
+client = commands.Bot(command_prefix='!')
 #client = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['DM BlackRabbit001#3981 for advertise in DM'])
- 
+status = cycle(['www.rabbit001.cf', 'With BlackRabbit', 'with Generator', 'with accounts'])
+
+@client.command()
+async def lala(ctx):
+    check_role = get(ctx.message.guild.roles, name='Leader')
+    if check_role in ctx.author.roles:
+        await ctx.send("Yes, you are the leader.")
+
+    else:
+        await ctx.send("You can't use this")
+
+@client.command()
+async def clear(ctx, amount=5):
+    await ctx.channel.purge(limit=amount)
+
+@client.command()
+async def ban(ctx):
+    check_role = get(ctx.message.guild.roles, name='BAN-SQUAD')
+    if check_role in ctx.author.roles:
+        await ctx.send("https://gifimage.net/wp-content/uploads/2017/07/ban-hammer-gif-14.gif")
+    else:
+        await ctx.send("You can't use this")
     
 @client.event
 async def on_ready():
     print("Bot Was Deployed Sucessfully !")
+    while True:
+        await client.change_presence(game=Game(name='with BadRabbit'))
+        await asyncio.sleep(3)
+        await client.change_presence(game=Game(name='with Generator'))
+        await asyncio.sleep(3)
+        await client.change_presence(game=Game(name='this Server', type = 3))
+        await asyncio.sleep(3)
+        await client.change_presence(game=Game(name='Viktor Sheen', type = 2))
+        await asyncio.sleep(3)
+
 
 @client.event
+async def on_message(message):
+    message.content = message.content.lower()
+    author = '{0.author.mention}'.format(message)
+    # we do not want the bot to reply to itself
+    if message.author == client.user:
+        return
 async def on_message(message):
     message.content = message.content.lower()
     author = '{0.author.mention}'.format(message)
