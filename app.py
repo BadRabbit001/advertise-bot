@@ -48,10 +48,6 @@ async def on_message(message):
     if message.content.startswith('Rabbit'):
         msg = '**DM to BlackRabbit001#3981 {0.author.mention}'.format(message)
         await message.author.send(msg
-                                  
-    if message.content.startswith('please'):
-        msg = '**DM to BlackRabbit001#3981 {0.author.mention}'.format(message)
-        await message.author.send(msg)
                                                                  
     if message.content.startswith('advertise'):
         msg = '**DM to BlackRabbit001#3981 {0.author.mention}'.format(message)
