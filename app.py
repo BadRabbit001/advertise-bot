@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix='!')
 #client = discord.Client()
 
 #create an arraylist containing phrases you want your bot to switch through.
-status = cycle(['www.rabbit001.cf', 'With BlackRabbit', 'with Generator', 'with accounts'])
+status = cycle(['DM for advertise in DMs', 'DM for advertise in DMs', 'DM for advertise in DMs', 'DM for advertise in DMs'])
 
 @client.command()
 async def lala(ctx):
